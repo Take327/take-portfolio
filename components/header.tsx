@@ -4,7 +4,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import Hidden from '@material-ui/core/Hidden';
 import HeaderNavi from './navi/headerNavi'
 
 
@@ -20,10 +19,11 @@ const useStyles = makeStyles((theme: Theme) =>
                 display: 'none',
             },
         },
-        gitButton: {
-            marginLeft: 'auto',
-        }
-
+        title:{
+            [theme.breakpoints.up('sm')]: {
+                marginLeft:'60px'
+            },
+        },
     }),
 );
 
@@ -48,11 +48,12 @@ const Header: React.FC<Props> = ({ chengeOpenState }) => {
                     <MenuIcon color="action" />
                 </IconButton>
 
-                <Typography>
+                <Typography className={classes.title}>
                     Take's portfolio
                 </Typography>
 
                 <HeaderNavi />
+
             </Toolbar>
         </AppBar>
     )

@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import SideNavi from '../components/navi/sideNavi'
+import Top from '../components/main/Top'
+import About from '../components/main/about'
 
 export default function Home() {
 
@@ -24,7 +26,9 @@ export default function Home() {
 
       <Header chengeOpenState={chengeOpenState} />
       <SideNavi openState={openState} chengeOpenState={chengeOpenState} />
-      <main className={styles.main}>
+      <main>
+        <Top />
+        <About />
       </main>
 
       <footer className={styles.footer}>

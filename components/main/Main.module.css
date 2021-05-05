@@ -1,0 +1,24 @@
+.top {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: url(../../public/top_background.jpg) center / cover;
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.about {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.paper {
+    max-width: 1028px;
+    width: 80vw;
+    min-height: 400px;
+    height: auto;
+}
