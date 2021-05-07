@@ -6,6 +6,7 @@ import Header from '../components/header'
 import SideNavi from '../components/navi/sideNavi'
 import Top from '../components/main/Top'
 import About from '../components/main/about'
+import Portfolio from '../components/main/Portfolio'
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
       <main>
         <Top />
         <About />
+        <Portfolio />
       </main>
 
       <footer className={styles.footer}>

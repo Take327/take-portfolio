@@ -7,7 +7,7 @@ const Top: React.FC = () => {
     return (
         <section>
             <div id="top" className={styles.top}>
-
+                
 
             </div>
         </section>

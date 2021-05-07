@@ -6,7 +6,7 @@ import Paper from '@material-ui/core/Paper';
 const About: React.FC = () => {
     return (
         <section>
-            <div className={styles.about}>
+            <div id="about" className={styles.about}>
                 <Paper elevation={3} className={styles.paper}>
                     test
                 </Paper>
