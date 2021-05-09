@@ -7,7 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { naviData } from '../../dataset/naviData'
-import NextLink from 'next/link'
+import { smoothScrollAction } from '../util/smoothScrollAction'
 
 
 
@@ -46,9 +46,7 @@ const SideNavi: React.FC<Props> = ({ openState, chengeOpenState }) => {
     return (
         <Hidden smUp implementation="css">
             <Drawer
-                //container={this.props.container}
                 variant="temporary"
-                //anchor={theme.direction === 'rtl' ? 'right' : 'left'}
                 open={openState}
                 onClose={() => chengeOpenState()}
                 classes={{
@@ -60,13 +58,9 @@ const SideNavi: React.FC<Props> = ({ openState, chengeOpenState }) => {
                     <List>
                         {naviData.map((value) => {
                             return (
-                                <NextLink href={value.href}>
-                                    <a>
-                                        <ListItem button key={value.title}>
-                                            <ListItemText primary={value.title} />
-                                        </ListItem>
-                                    </a>
-                                </NextLink>
+                                <ListItem button key={value.title} onClick={()=>{smoothScrollAction(value.href)}}>
+                                    <ListItemText primary={value.title} />
+                                </ListItem>
                             )
                         })}
                     </List>

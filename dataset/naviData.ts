@@ -2,7 +2,7 @@ export const naviData: { title: string, href: string }[] = [
 
     {
         title: 'トップ',
-        href: '#'
+        href: '#top'
     },
     {
         title: 'このサイトについて',

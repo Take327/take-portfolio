@@ -6,6 +6,7 @@ import Header from '../components/header'
 import SideNavi from '../components/navi/sideNavi'
 import Top from '../components/main/Top'
 import About from '../components/main/About'
+
 import Portfolio from '../components/main/Portfolio'
 
 export default function Home() {
