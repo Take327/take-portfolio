@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <section>
             <div id="about" className={styles.about}>
                 <Paper elevation={3} className={styles.paper}>
-                    test
+                    デプロイテスト
 
 
                 </Paper>
