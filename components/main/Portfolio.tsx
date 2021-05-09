@@ -3,23 +3,10 @@ import styles from './Main.module.css'
 import Paper from '@material-ui/core/Paper';
 
 
-
-export const PortfolioItem: React.FC<{ itemTitle: string, itemImgPath: string }> = ({ itemTitle, itemImgPath }) => {
-    return (
-        <Paper elevation={3} className={styles.paper}>
-            {itemTitle}
-        </Paper>
-    )
-
-}
-
-
-
-
-
-
-
-
+const profileItems: { itemTitle: string, itemImgPath: string }[] = [
+    { itemTitle: "Take's portfolio", itemImgPath: '../' },
+    { itemTitle: "IT-TYPING", itemImgPath: '../' },
+]
 
 const PortFolio: React.FC = () => {
 
@@ -28,9 +15,11 @@ const PortFolio: React.FC = () => {
             <div id="portfolio" className={styles.portfolio}>
                 <h2>works</h2>
                 <div className={styles.portfolioItem}>
-                    <PortfolioItem itemTitle="test" itemImgPath="testpath" />
-                    <PortfolioItem itemTitle="test" itemImgPath="testpath" />
-                    <PortfolioItem itemTitle="test" itemImgPath="testpath" />
+                    {profileItems.map((item) => {
+                        return (<Paper elevation={3} className={styles.paper}>
+                            {item.itemTitle}
+                        </Paper>)
+                    })}
 
                 </div>
             </div>

@@ -9,6 +9,7 @@ const About: React.FC = () => {
             <div id="about" className={styles.about}>
                 <Paper elevation={3} className={styles.paper}>
                     test
+                    
                 </Paper>
             </div>
 

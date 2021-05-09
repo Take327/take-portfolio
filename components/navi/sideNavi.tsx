@@ -60,7 +60,9 @@ const SideNavi: React.FC<Props> = ({ openState, chengeOpenState }) => {
                         {naviData.map((value) => {
                             return (
                                 <ListItem button key={value.title}>
-                                    <ListItemText primary={value.title} />
+                                    <a href={"#" + value.href}>
+                                        <ListItemText primary={value.title} />
+                                    </a>
                                 </ListItem>
                             )
                         })}

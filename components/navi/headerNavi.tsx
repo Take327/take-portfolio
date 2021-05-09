@@ -13,7 +13,9 @@ const HeaderNavi = () => {
                 {naviData.map((value) => {
                     return (
                         <ListItem button key={value.title} className={styles.navi_item}>
-                            <ListItemText primary={value.title} />
+                            <a href={"#" + value.href}>
+                                <ListItemText primary={value.title} />
+                            </a>
                         </ListItem>
                     )
                 })}
