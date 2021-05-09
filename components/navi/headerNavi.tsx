@@ -12,11 +12,12 @@ const HeaderNavi = () => {
             <List className={styles.navi_list}>
                 {naviData.map((value) => {
                     return (
-                        <ListItem button key={value.title} className={styles.navi_item}>
-                            <a href={"#" + value.href}>
+                        <a href={value.href}>
+                            <ListItem button key={value.title} className={styles.navi_item}>
                                 <ListItemText primary={value.title} />
-                            </a>
-                        </ListItem>
+                            </ListItem>
+                        </a>
+
                     )
                 })}
             </List>

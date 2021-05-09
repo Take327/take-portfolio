@@ -2,21 +2,21 @@ export const naviData: { title: string, href: string }[] = [
 
     {
         title: 'トップ',
-        href: 'top'
+        href: '#'
     },
     {
         title: 'このサイトについて',
-        href: 'about'
+        href: '#about'
 
     },
     {
         title: 'ポートフォリオ',
-        href: 'portfolio'
+        href: '#portfolio'
 
     },
     {
         title: '連絡先',
-        href: 'contact'
+        href: '#contact'
 
     }
 

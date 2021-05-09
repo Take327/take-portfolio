@@ -7,6 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { naviData } from '../../dataset/naviData'
+import NextLink from 'next/link'
 
 
 
@@ -59,11 +60,13 @@ const SideNavi: React.FC<Props> = ({ openState, chengeOpenState }) => {
                     <List>
                         {naviData.map((value) => {
                             return (
-                                <ListItem button key={value.title}>
-                                    <a href={"#" + value.href}>
-                                        <ListItemText primary={value.title} />
+                                <NextLink href={value.href}>
+                                    <a>
+                                        <ListItem button key={value.title}>
+                                            <ListItemText primary={value.title} />
+                                        </ListItem>
                                     </a>
-                                </ListItem>
+                                </NextLink>
                             )
                         })}
                     </List>
