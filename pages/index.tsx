@@ -6,8 +6,8 @@ import Header from '../components/header'
 import SideNavi from '../components/navi/sideNavi'
 import Top from '../components/main/Top'
 import About from '../components/main/About'
-
 import Portfolio from '../components/main/Portfolio'
+import Contact from '../components/main/Contact'
 
 export default function Home() {
 
@@ -32,6 +32,7 @@ export default function Home() {
         <Top />
         <About />
         <Portfolio />
+        <Contact />
       </main>
 
       <footer className={styles.footer}>

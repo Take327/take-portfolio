@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Main.module.css'
+import styles from './Main.module.scss'
 import Paper from '@material-ui/core/Paper';
 
 
@@ -11,8 +11,8 @@ const profileItems: { itemTitle: string, itemImgPath: string }[] = [
 const PortFolio: React.FC = () => {
 
     return (
-        <section>
-            <div id="portfolio" className={styles.portfolio}>
+        <section id="portfolio">
+            <div className={styles.portfolio}>
                 <h2>works</h2>
                 <div className={styles.portfolioItem}>
                     {profileItems.map((item) => {

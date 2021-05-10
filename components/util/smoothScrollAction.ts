@@ -4,8 +4,6 @@ export const smoothScrollAction = (href: string) => {
     const offset = window.pageYOffset;
     const target = rect + offset;
 
-
-
     window.scrollTo({
         top: target,
         behavior: 'smooth',

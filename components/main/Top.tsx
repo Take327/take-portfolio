@@ -1,13 +1,13 @@
 
 import React from 'react'
-import styles from './Main.module.css'
+import styles from './Main.module.scss'
 
 const Top: React.FC = () => {
 
     return (
-        <section>
-            <div id="top" className={styles.top}>
-                
+        <section id="top">
+            <div className={styles.top}>
+
 
             </div>
         </section>

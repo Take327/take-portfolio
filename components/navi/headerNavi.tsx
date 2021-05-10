@@ -1,7 +1,6 @@
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { naviData } from '../../dataset/naviData'
 import styles from './navi.module.css'
 import { smoothScrollAction } from '../util/smoothScrollAction'
