@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import Backdrop from '@material-ui/core/Backdrop';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
@@ -28,7 +28,8 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths }) => {
     const classes = useStyles();
 
     const [open, setOpen] = React.useState(false);
-    const handleClose = () => {
+    const handleClose = (e: React.MouseEvent<HTMLInputElement>) => {
+        console.log(e.target)
         setOpen(false);
     };
     const handleToggle = () => {
@@ -37,7 +38,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths }) => {
 
     return (
         <div className={styles.portfolioItem}>
-            <img src={itemImgPaths.main} alt={itemTitle} onClick={handleToggle} />
+            <img src={itemImgPaths.main} className={styles.mainImg} alt={itemTitle} onClick={handleToggle} />
             <h4>{itemTitle}</h4>
             <Backdrop className={classes.backdrop} open={open} onClick={handleClose} >
                 <Paper className={styles.paper}>
@@ -49,6 +50,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths }) => {
                         }
                     </div>
                 </Paper>
+
             </Backdrop>
         </div>
     )
