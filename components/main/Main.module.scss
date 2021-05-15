@@ -33,33 +33,48 @@
     flex-direction: column;
     background-color: #edf2f6;
     height: 100vh;
-
-    .paper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 200px;
-        width: 150px;
-    }
-
-    .portfolioItem {
+    
+    .portfolioItemsArea {
         display: flex;
         justify-content: space-around;
-        width: 70vw;
+        width: 80vw;
         padding: 20px;
-        img {
+        .portfolioItem {
             width: 20vw;
+            img {
+                width: 100%;
+            }
+        }
+
+        .paper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 80vw;
+            .imgs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around;
+                width: 50%;
+                height: 40%;
+
+                img {
+                    width: 150px;
+                }
+            }
         }
     }
 
     @media screen and (max-width: 600px) {
-        .portfolioItem {
+        .portfolioItemsArea {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            width: 70vw;
+            width: 80vw;
             height: 1000px;
         }
     }

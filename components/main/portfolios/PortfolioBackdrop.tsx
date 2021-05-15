@@ -15,23 +15,42 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-type Props ={
-    itemTitle:string,
-
+type Props = {
+    itemTitle: string,
+    itemImgPaths: {
+        main: string,
+        imgs: string[]
+    }
 }
 
-const PortfolioBackdrop = () => {
+const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths }) => {
 
     const classes = useStyles();
 
     const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
 
     return (
-        <Backdrop className={classes.backdrop} open={open}>
-            <Paper className={styles.paper}>
-                
-            </Paper>
-        </Backdrop>
+        <div className={styles.portfolioItem}>
+            <img src={itemImgPaths.main} alt={itemTitle} onClick={handleToggle} />
+            <h4>{itemTitle}</h4>
+            <Backdrop className={classes.backdrop} open={open} onClick={handleClose} >
+                <Paper className={styles.paper}>
+                    <div className={styles.imgs}>
+                        {
+                            itemImgPaths.imgs.map((imgPath) => {
+                                return <img src={imgPath} />
+                            })
+                        }
+                    </div>
+                </Paper>
+            </Backdrop>
+        </div>
     )
 }
 
