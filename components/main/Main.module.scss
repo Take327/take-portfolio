@@ -45,29 +45,38 @@
             .mainImg {
                 width: 100%;
                 box-shadow: 2px 2px 4px gray;
-                :hover {
-                    width: 110%;
+                transition: 0.3s all;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                    transition: 0.3s all;
                 }
+            }
+            h4 {
+                text-align: center;
             }
         }
 
         .paper {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
             height: 80vh;
             width: 80vw;
-            .imgs {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-content: space-around;
-                width: 50%;
-                height: 40%;
+            .itemTexts {
+                width: 40%;
+            }
 
-                img {
-                    width: 150px;
+            .itemImgArea {
+                display: flex;
+                flex-direction: column;
+                .imgs {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    align-content: space-around;
+                    height: 40%;
+                    img {
+                        width: 150px;
+                        margin: 5px;
+                    }
                 }
             }
         }
@@ -83,13 +92,9 @@
             height: 100vh;
             .portfolioItem {
                 width: 80%;
-                background-color: aqua;
                 .mainImg {
                     width: 100%;
                     box-shadow: 2px 2px 4px gray;
-                    :hover {
-                        width: 110%;
-                    }
                 }
             }
         }

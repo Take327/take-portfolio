@@ -42,13 +42,23 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths }) => {
             <h4>{itemTitle}</h4>
             <Backdrop className={classes.backdrop} open={open} onClick={handleClose} >
                 <Paper className={styles.paper}>
-                    <div className={styles.imgs}>
-                        {
-                            itemImgPaths.imgs.map((imgPath) => {
-                                return <img src={imgPath} />
-                            })
-                        }
+                    <div className={styles.itemTexts}>
+                        test
                     </div>
+                    <div className={styles.itemImgArea}>
+                        <div className={styles.imgs}>
+                            {
+                                itemImgPaths.imgs.map((imgPath) => {
+                                    return <img src={imgPath} />
+                                })
+                            }
+                        </div>
+                        <div className={styles.activeImg}>
+
+                        </div>
+
+                    </div>
+
                 </Paper>
 
             </Backdrop>
