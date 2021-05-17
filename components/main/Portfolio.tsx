@@ -1,39 +1,9 @@
 import React from 'react'
 import styles from './Main.module.scss'
 import PortfolioBackdrop from './portfolios/PortfolioBackdrop';
+import { profileItems } from '../../dataset/profileItems'
 
 
-
-const profileItems: { itemTitle: string, itemImgPath: { main: string, imgs: string[] } }[] = [
-    {
-        itemTitle: "Take's portfolio",
-        itemImgPath: {
-            main: '/img/portfolio/it-typing/it-typing_top.jpg',
-            imgs: [
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-            ]
-        }
-    },
-    {
-        itemTitle: "IT-TYPING",
-        itemImgPath: {
-            main: '/img/portfolio/it-typing/it-typing_typing.jpg',
-            imgs: [
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_typing.jpg',
-                '/img/portfolio/it-typing/it-typing_registration.jpg',
-                '/img/portfolio/it-typing/it-typing_login.jpg',
-                '/img/portfolio/it-typing/it-typing_signup.jpg',
-                '/img/portfolio/it-typing/it-typing_contact.jpg',
-            ]
-        }
-    }
-]
 
 
 
@@ -46,7 +16,7 @@ const PortFolio: React.FC = () => {
                 <div className={styles.portfolioItemsArea}>
                     {profileItems.map((item) => {
                         return (
-                            <PortfolioBackdrop itemTitle={item.itemTitle} itemImgPaths={item.itemImgPath} />
+                            <PortfolioBackdrop itemTitle={item.itemTitle} itemImgPaths={item.itemImgPath} url={item.url} github={item.github} />
                         )
                     })}
                 </div>
