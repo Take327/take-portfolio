@@ -60,14 +60,18 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                 <Paper className={styles.paper}>
                     <div className={styles.itemTexts}>
                         <h2>{itemTitle}</h2>
-                        <Typography >
+
+                        <div className={styles.links}>
                             <Link href={url} >
                                 <LinkIcon fontSize="small" />{url}
                             </Link>
                             <Link href={github} target="_blank">
                                 <GitHubIcon fontSize="small" />GitHub
                             </Link>
-                            
+
+                        </div>
+                        <Typography >
+
                         </Typography>
                     </div>
                     <div className={styles.itemImgArea}>

@@ -34,8 +34,8 @@ export const profileItems: ProfileItems = [
                 '/img/portfolio/it-typing/it-typing_typing.jpg',
                 '/img/portfolio/it-typing/it-typing_registration.jpg',
                 '/img/portfolio/it-typing/it-typing_login.jpg',
-                '/img/portfolio/it-typing/it-typing_signup.jpg',
-                '/img/portfolio/it-typing/it-typing_contact.jpg',
+                //'/img/portfolio/it-typing/it-typing_signup.jpg',
+                //'/img/portfolio/it-typing/it-typing_contact.jpg',
             ]
         },
         url: 'https://it-typing.web.app/',

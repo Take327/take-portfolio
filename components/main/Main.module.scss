@@ -65,6 +65,10 @@
                 h2 {
                     text-align: center;
                 }
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                }
             }
 
             .itemImgArea {
@@ -108,6 +112,38 @@
             height: 100vh;
             .portfolioItem {
                 width: 80%;
+            }
+
+            .paper {
+                display: flex;
+                height: 80vh;
+                width: 80vw;
+                flex-direction: column;
+                .itemTexts {
+                    width: 100%;
+                    height: 40%;
+                }
+
+                .itemImgArea {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 60%;
+                    .imgs {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        align-content: space-around;
+                        height: 40%;
+                        img {
+                            width: 100px;
+                            margin: 5px;
+                            box-shadow: 2px 2px 4px gray;
+                        }
+                    }
+    
+                }
             }
         }
     }
