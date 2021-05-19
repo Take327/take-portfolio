@@ -16,7 +16,7 @@ const PortFolio: React.FC = () => {
                 <div className={styles.portfolioItemsArea}>
                     {profileItems.map((item) => {
                         return (
-                            <PortfolioBackdrop itemTitle={item.itemTitle} itemImgPaths={item.itemImgPath} url={item.url} github={item.github} />
+                            <PortfolioBackdrop itemTitle={item.itemTitle} itemImgPaths={item.itemImgPath} url={item.url} github={item.github} text={item.text} tech={item.tech} />
                         )
                     })}
                 </div>

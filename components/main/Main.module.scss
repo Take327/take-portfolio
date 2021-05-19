@@ -60,12 +60,27 @@
             display: flex;
             height: 80vh;
             width: 80vw;
+            overflow: auto;
             .itemTexts {
+                display: flex;
+                flex-direction: column;
                 width: 40%;
+                padding: 10px;
                 h2 {
                     text-align: center;
                 }
-                .links{
+
+                .text {
+                    position: relative;
+                    padding: 0.25em 1em;
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .links {
                     display: flex;
                     flex-direction: column;
                 }
@@ -78,9 +93,9 @@
                 .imgs {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: flex-start;
+                    justify-content: space-around;
                     align-content: space-around;
-                    height: 40%;
+                    height: 30%;
                     img {
                         width: 150px;
                         margin: 5px;
@@ -89,7 +104,7 @@
                 }
                 .activeImg {
                     padding: 20px;
-                    height: 60%;
+                    height: 70%;
 
                     img {
                         height: auto;
@@ -142,7 +157,6 @@
                             box-shadow: 2px 2px 4px gray;
                         }
                     }
-    
                 }
             }
         }

@@ -5,7 +5,9 @@ type ProfileItems = {
         imgs: string[]
     },
     url: string,
-    github: string
+    github: string,
+    text:string,
+    tech:string
 }[]
 
 export const profileItems: ProfileItems = [
@@ -23,7 +25,11 @@ export const profileItems: ProfileItems = [
             ]
         },
         url: 'https://take-portfolio.vercel.app/',
-        github: 'https://github.com/Take327/take-portfolio'
+        github: 'https://github.com/Take327/take-portfolio',
+        text:`現在アクセスしていただいているWEBサイトになります。¥n
+        Next.jsを使用しランニングページをとして作成しました。
+        現在の私のスキルや製作物について知っていただくことを目標としています。`,
+        tech:'Next.js,TypeScript,SCSS,Material-ui'
     },
     {
         itemTitle: "IT-TYPING",
@@ -39,6 +45,11 @@ export const profileItems: ProfileItems = [
             ]
         },
         url: 'https://it-typing.web.app/',
-        github: 'https://github.com/Take327/it-typing'
+        github: 'https://github.com/Take327/it-typing',
+        text:`こちらはユーザー独自のフリーワードでタイピングできるWEBアプリケーションとなります。\r\n
+        日々のタイピングでよく使用するワードを登録し練習することで、\n
+        従来のタイピングソフトより効率的かつ実践的にタイピング練習をすることができます。
+        Reactで作成をしFirebaseへデプロイしています。`,
+        tech:'React,TypeScript,Material-ui,Firebase Hosting,\r\nFirebase Cloud Functions,Firebase Cloud Firestore,Firebase Authentication'
     }
 ]

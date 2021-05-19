@@ -7,7 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkIcon from '@material-ui/icons/Link';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
-
+import { Divider } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -25,10 +25,12 @@ type Props = {
         imgs: string[]
     },
     url: string,
-    github: string
+    github: string,
+    text: string,
+    tech: string
 }
 
-const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, github }) => {
+const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, github, text, tech }) => {
 
     const classes = useStyles();
 
@@ -60,7 +62,16 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                 <Paper className={styles.paper}>
                     <div className={styles.itemTexts}>
                         <h2>{itemTitle}</h2>
-
+                        <div className={styles.text}>
+                            <p>{text}</p>
+                        </div>
+                        <Divider />
+                        <h4>使用言語など</h4>
+                        <div className={styles.text}>
+                            <p>{tech}</p>
+                        </div>
+                        <Divider />
+                        <h4>Link</h4>
                         <div className={styles.links}>
                             <Link href={url} >
                                 <LinkIcon fontSize="small" />{url}
@@ -75,6 +86,9 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                         </Typography>
                     </div>
                     <div className={styles.itemImgArea}>
+                        <div className={styles.activeImg}>
+                            <img src={targetImgPath} />
+                        </div>
                         <div className={styles.imgs}>
                             {
                                 itemImgPaths.imgs.map((imgPath) => {
@@ -82,10 +96,6 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                                 })
                             }
                         </div>
-                        <div className={styles.activeImg}>
-                            <img src={targetImgPath} />
-                        </div>
-
                     </div>
 
                 </Paper>
