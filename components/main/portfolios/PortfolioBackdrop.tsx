@@ -66,20 +66,29 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                             <p>{text}</p>
                         </div>
                         <Divider />
-                        <h4>使用言語など</h4>
+
                         <div className={styles.text}>
+                            <h4>
+                                使用言語など
+                            </h4>
                             <p>{tech}</p>
                         </div>
                         <Divider />
-                        <h4>Link</h4>
-                        <div className={styles.links}>
-                            <Link href={url} >
-                                <LinkIcon fontSize="small" />{url}
-                            </Link>
-                            <Link href={github} target="_blank">
-                                <GitHubIcon fontSize="small" />GitHub
-                            </Link>
 
+                        <div className={styles.text}>
+                            <h4>Link</h4>
+                            <div className={styles.link}>
+                                <LinkIcon fontSize="small" />
+                                <a href={url} target="_blank">
+                                    {url}
+                                </a>
+                            </div>
+                            <div className={styles.link}>
+                                <GitHubIcon fontSize="small" />
+                                <a href={github} target="_blank">
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                         <Typography >
 
