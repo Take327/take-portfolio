@@ -26,7 +26,7 @@ type Props = {
     },
     url: string,
     github: string,
-    text: string,
+    text: string[],
     tech: string
 }
 
@@ -63,7 +63,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                     <div className={styles.itemTexts}>
                         <h2>{itemTitle}</h2>
                         <div className={styles.text}>
-                            <p>{text}</p>
+                            <p>{text.join('\n')}</p>
                         </div>
                         <Divider />
 
