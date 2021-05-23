@@ -63,7 +63,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                     <div className={styles.itemTexts}>
                         <h2>{itemTitle}</h2>
                         <div className={styles.text}>
-                            <p>{text.join('\n')}</p>
+                            <p>{text.map((value) => { return <> {value} <br /> </> })}</p>
                         </div>
                         <Divider />
 
@@ -90,14 +90,14 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                                 </a>
                             </div>
                         </div>
-                        <Typography >
+                        <Divider />
 
-                        </Typography>
                     </div>
                     <div className={styles.itemImgArea}>
                         <div className={styles.activeImg}>
                             <img src={targetImgPath} />
                         </div>
+                        <Divider />
                         <div className={styles.imgs}>
                             {
                                 itemImgPaths.imgs.map((imgPath) => {

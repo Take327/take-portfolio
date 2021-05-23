@@ -50,8 +50,7 @@ export const profileItems: ProfileItems = [
         github: 'https://github.com/Take327/it-typing',
         text: [
             'こちらはユーザー独自のフリーワードでタイピングできるWEBアプリケーションとなります。',
-            '日々のタイピングでよく使用するワードを登録し練習することで、',
-            '従来のタイピングソフトより効率的かつ実践的にタイピング練習をすることができます。',
+            '日々のタイピングでよく使用するワードを登録し練習することで、従来のタイピングソフトより効率的かつ実践的にタイピング練習をすることができます。',
             'Reactで作成をしFirebaseへデプロイしています。'
         ],
         tech: 'React,TypeScript,Material-ui,Firebase Hosting,\r\nFirebase Cloud Functions,Firebase Cloud Firestore,Firebase Authentication'
