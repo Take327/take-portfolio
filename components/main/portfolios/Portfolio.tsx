@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './Main.module.scss'
-import PortfolioBackdrop from './portfolios/PortfolioBackdrop';
-import { profileItems } from '../../dataset/profileItems'
+import styles from './Portfolio.module.scss'
+import PortfolioBackdrop from './PortfolioBackdrop';
+import { profileItems } from '../../../dataset/profileItems'
 
 
 

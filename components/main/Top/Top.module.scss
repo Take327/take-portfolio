@@ -1,0 +1,8 @@
+.top {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: url(../../../public/top_background.jpg) center / cover;
+    filter: brightness(80%);
+    object-fit: cover;
+}

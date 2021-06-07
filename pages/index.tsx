@@ -4,10 +4,10 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import SideNavi from '../components/navi/sideNavi'
-import Top from '../components/main/Top'
-import About from '../components/main/About'
-import Portfolio from '../components/main/Portfolio'
-import Contact from '../components/main/Contact'
+import Top from '../components/main/Top/Top'
+import About from '../components/main/About/About'
+import Portfolio from '../components/main/portfolios/Portfolio'
+import Contact from '../components/main/Contact/Contact'
 
 export default function Home() {
 

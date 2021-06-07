@@ -2,11 +2,9 @@ import React, { useState } from 'react'
 import Backdrop from '@material-ui/core/Backdrop';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import styles from '../Main.module.scss'
+import styles from './Portfolio.module.scss'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkIcon from '@material-ui/icons/Link';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
 import { Divider } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -66,7 +64,6 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                             <p>{text.map((value) => { return <> {value} <br /> </> })}</p>
                         </div>
                         <Divider />
-
                         <div className={styles.text}>
                             <h4>
                                 使用言語など

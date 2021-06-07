@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Main.module.scss'
+import styles from './About.module.scss'
 import Paper from '@material-ui/core/Paper';
 
 
