@@ -43,9 +43,6 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           © 2021 Takeshi.T
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
         </a>
       </footer>
     </div>

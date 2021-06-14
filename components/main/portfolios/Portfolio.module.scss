@@ -66,7 +66,9 @@
             .itemImgArea {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
                 width: 60%;
+                height: auto;
                 .imgs {
                     display: flex;
                     flex-wrap: wrap;
@@ -137,10 +139,6 @@
                     .imgs {
                         display: flex;
                         flex-wrap: wrap;
-                        justify-content: space-around;
-                        align-content: space-around;
-                        height: 40%;
-
                         img {
                             width: 100px;
                             margin: 5px;
