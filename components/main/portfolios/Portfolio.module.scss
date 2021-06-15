@@ -101,46 +101,20 @@
 
     @media screen and (max-width: 900px) {
         .portfolioItemsArea {
-            display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
-            width: 80vw;
             height: 100vh;
             .portfolioItem {
                 width: 80%;
             }
-
             .paper {
                 flex-flow: column;
                 overflow-y: auto;
-
                 .itemTexts {
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: space-around;
                     width: auto;
-                    padding: 10px;
-                    h2 {
-                        text-align: center;
-                    }
                 }
-
                 .itemImgArea {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
                     width: 100%;
-                    height: auto;
-                    .imgs {
-                        display: flex;
-                        flex-wrap: wrap;
-                        img {
-                            width: 100px;
-                            margin: 5px;
-                            box-shadow: 2px 2px 4px gray;
-                        }
-                    }
                 }
             }
         }
