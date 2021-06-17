@@ -48,6 +48,7 @@
                 .text {
                     display: flex;
                     flex-direction: column;
+                    margin: 10px 0px 10px 0px;
                     h4 {
                         text-align: left;
                         padding-left: 1rem;
@@ -115,6 +116,12 @@
                 }
                 .itemImgArea {
                     width: 100%;
+                    .imgs {
+                        display: none;
+                    }
+                    .activeImg {
+                        padding: 0px;
+                    }
                 }
             }
         }
