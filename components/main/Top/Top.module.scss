@@ -3,6 +3,33 @@
     width: 100vw;
     min-height: 100vh;
     background: url(../../../public/top_background.jpg) center / cover;
-    filter: brightness(80%);
-    object-fit: cover;
+
+    .titlearea {
+        position: relative;
+        top: 100px;
+        text-align: center;
+        h1 {
+            color: white;
+            font-weight:bold;
+            font-size: 100px;
+            text-decoration:underline;
+            text-decoration-color:#FFF
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .titlearea {
+            position: relative;
+            top: 100px;
+            text-align: center;
+            h1 {
+                color: white;
+                font-weight:bold;
+                font-size: auto;
+                text-decoration:underline;
+                text-decoration-color:#FFF
+            }
+        }
+    }
+
 }

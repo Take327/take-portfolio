@@ -1,6 +1,6 @@
 type ProfileItems = {
     itemTitle: string,
-    itemImgPath: {
+    itemImgPaths: {
         main: string,
         imgs: string[]
     },
@@ -13,7 +13,7 @@ type ProfileItems = {
 export const profileItems: ProfileItems = [
     {
         itemTitle: "Take's portfolio",
-        itemImgPath: {
+        itemImgPaths: {
             main: '/img/portfolio/it-typing/it-typing_top.jpg',
             imgs: [
                 '/img/portfolio/it-typing/it-typing_top.jpg',
@@ -35,7 +35,7 @@ export const profileItems: ProfileItems = [
     },
     {
         itemTitle: "IT-TYPING",
-        itemImgPath: {
+        itemImgPaths: {
             main: '/img/portfolio/it-typing/it-typing_typing.jpg',
             imgs: [
                 '/img/portfolio/it-typing/it-typing_top.jpg',

@@ -17,23 +17,25 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 type Props = {
-    itemTitle: string,
-    itemImgPaths: {
-        main: string,
-        imgs: string[]
-    },
-    url: string,
-    github: string,
-    text: string[],
-    tech: string
+    profileItem: {
+        itemTitle: string,
+        itemImgPaths: {
+            main: string,
+            imgs: string[]
+        },
+        url: string,
+        github: string,
+        text: string[],
+        tech: string
+    }
 }
 
-const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, github, text, tech }) => {
+const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
 
     const classes = useStyles();
 
     const [open, setOpen] = React.useState(false);
-    const [targetImgPath, setTargetImgPath] = useState<string>(itemImgPaths.main)
+    const [targetImgPath, setTargetImgPath] = useState<string>(profileItem.itemImgPaths.main);
 
     const handleClose = (e) => {
         switch (e.target.id) {
@@ -54,21 +56,21 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
 
     return (
         <div className={styles.portfolioItem}>
-            <img src={itemImgPaths.main} className={styles.mainImg} alt={itemTitle} onClick={handleToggle} />
-            <h4>{itemTitle}</h4>
+            <img src={profileItem.itemImgPaths.main} className={styles.mainImg} alt={profileItem.itemTitle} onClick={handleToggle} />
+            <h4>{profileItem.itemTitle}</h4>
             <Backdrop className={classes.backdrop} open={open} onClick={handleClose} id="backdrop">
                 <Paper className={styles.paper}>
                     <div className={styles.itemTexts}>
-                        <h2>{itemTitle}</h2>
+                        <h2>{profileItem.itemTitle}</h2>
                         <div className={styles.text}>
-                            <p>{text.map((value) => { return <> {value} <br /> </> })}</p>
+                            <p>{profileItem.text.map((value) => { return <> {value} <br /> </> })}</p>
                         </div>
                         <Divider />
                         <div className={styles.text}>
                             <h4>
                                 使用言語など
                             </h4>
-                            <p>{tech}</p>
+                            <p>{profileItem.tech}</p>
                         </div>
                         <Divider />
 
@@ -76,13 +78,13 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                             <h4>Link</h4>
                             <div className={styles.link}>
                                 <LinkIcon fontSize="small" />
-                                <a href={url} target="_blank">
-                                    {url}
+                                <a href={profileItem.url} target="_blank">
+                                    {profileItem.url}
                                 </a>
                             </div>
                             <div className={styles.link}>
                                 <GitHubIcon fontSize="small" />
-                                <a href={github} target="_blank">
+                                <a href={profileItem.github} target="_blank">
                                     GitHub
                                 </a>
                             </div>
@@ -97,7 +99,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ itemTitle, itemImgPaths, url, gith
                         <Divider />
                         <div className={styles.imgs}>
                             {
-                                itemImgPaths.imgs.map((imgPath) => {
+                                profileItem.itemImgPaths.imgs.map((imgPath) => {
                                     return <img src={imgPath} onClick={() => changeActiveImg(imgPath)} />
                                 })
                             }
