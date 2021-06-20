@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useState } from 'react'
+import React, { useState } from 'react'
 import Backdrop from '@material-ui/core/Backdrop';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
@@ -63,35 +63,40 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                     <div className={styles.itemTexts}>
                         <h2>{profileItem.itemTitle}</h2>
                         <div className={styles.text}>
-                            <p>{profileItem.text.map((value,index) => { return <> {value} <br key={index}/> </> })}</p>
+                            <p>{profileItem.text.map((value, index) => { return <span key={index}> {value} <br /> </span> })}</p>
                         </div>
                         <Divider />
+
                         <div className={styles.text}>
                             <h4>
                                 使用言語など
                             </h4>
                             <p>{profileItem.tech}</p>
                         </div>
+                        
                         <Divider />
 
                         <div className={styles.text}>
                             <h4>Link</h4>
+
                             <div className={styles.link}>
                                 <LinkIcon fontSize="small" />
                                 <a href={profileItem.url} target="_blank">
                                     {profileItem.url}
                                 </a>
                             </div>
+
                             <div className={styles.link}>
                                 <GitHubIcon fontSize="small" />
                                 <a href={profileItem.github} target="_blank">
                                     GitHub
                                 </a>
                             </div>
+
                         </div>
                         <Divider />
-
                     </div>
+
                     <div className={styles.itemImgArea}>
                         <div className={styles.activeImg}>
                             <img src={targetImgPath} />
@@ -99,8 +104,8 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                         <Divider />
                         <div className={styles.imgs}>
                             {
-                                profileItem.itemImgPaths.imgs.map((imgPath,index) => {
-                                    return <img src={imgPath} onClick={() => changeActiveImg(imgPath)} key={index}/>
+                                profileItem.itemImgPaths.imgs.map((imgPath, index) => {
+                                    return <img src={imgPath} onClick={() => changeActiveImg(imgPath)} key={index} />
                                 })
                             }
                         </div>

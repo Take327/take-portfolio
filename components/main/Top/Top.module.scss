@@ -10,15 +10,14 @@
             top: 100px;
             text-align: center;
             color: #000;
-            font-size: 9rem;
+            font-size: 12rem;
         }
     }
 
     @media screen and (max-width: 900px) {
         .titlearea {
             h1 {
-                color: #000;
-                font-size: 5rem;
+                font-size: 7rem;
             }
         }
     }

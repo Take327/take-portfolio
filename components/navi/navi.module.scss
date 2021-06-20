@@ -7,7 +7,7 @@
     height: 100%;
     .navi_ul {
         display: flex;
-        list-style: none;
+        list-style: none;/*liの点を消す*/
         margin: 0;
         padding: 0;
         height: 100%;
@@ -16,12 +16,20 @@
         display: flex;
         align-items: center;    
         margin: 0;
-        padding: 0.5rem;
         height: 100%;
-        text-align: center;
         font-size: 1.6rem;
         &:hover {
-            background-color: rgba(245, 245, 245, 1);
+            background-color: rgba(245, 245, 245, 3);
+            transition: 0.5s ;
+            cursor: pointer;/*カーソルを合わせた際に指マークに変更させる*/
+        }
+        a{
+            display: flex;
+            align-items: center;    
+            height: 100%;
+            width: 100%;
+            padding: 1.0rem;
+            white-space: nowrap;
         }
     }
 }
