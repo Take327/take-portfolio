@@ -1,33 +1,24 @@
 .top {
-    position: relative;
     width: 100vw;
     min-height: 100vh;
     background: url(../../../public/top_background.jpg) center / cover;
 
     .titlearea {
-        position: relative;
-        top: 100px;
-        text-align: center;
         h1 {
-            color: white;
-            font-weight:bold;
-            font-size: 100px;
-            text-decoration:underline;
-            text-decoration-color:#FFF
+            margin: 0;
+            position: relative;
+            top: 100px;
+            text-align: center;
+            color: #000;
+            font-size: 9rem;
         }
     }
 
     @media screen and (max-width: 900px) {
         .titlearea {
-            position: relative;
-            top: 100px;
-            text-align: center;
             h1 {
-                color: white;
-                font-weight:bold;
-                font-size: auto;
-                text-decoration:underline;
-                text-decoration-color:#FFF
+                color: #000;
+                font-size: 5rem;
             }
         }
     }

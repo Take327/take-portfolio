@@ -11,7 +11,7 @@ import HeaderNavi from './navi/headerNavi'
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         appBar: {
-            backgroundColor: '#FFF'
+            backgroundColor: '#FFF',
         },
         menuButton: {
             marginRight: theme.spacing(2),
@@ -19,9 +19,10 @@ const useStyles = makeStyles((theme: Theme) =>
                 display: 'none',
             },
         },
-        title:{
+        title: {
+            fontSize: '2.0rem',
             [theme.breakpoints.up('sm')]: {
-                marginLeft:'60px'
+                marginLeft: '60px',
             },
         },
     }),

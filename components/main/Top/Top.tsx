@@ -10,7 +10,6 @@ const Top: React.FC = () => {
                 <div className={styles.titlearea}>
                     <h1>Take’s Portfolio</h1>
                 </div>
-
             </div>
         </section>
     )

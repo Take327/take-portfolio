@@ -14,9 +14,9 @@ const PortFolio: React.FC = () => {
             <div className={styles.portfolio}>
                 <h2>works</h2>
                 <div className={styles.portfolioItemsArea}>
-                    {profileItems.map((profileItem) => {
+                    {profileItems.map((profileItem,index) => {
                         return (
-                            <PortfolioBackdrop profileItem={profileItem} />
+                            <PortfolioBackdrop profileItem={profileItem} key={index}/>
                         )
                     })}
                 </div>

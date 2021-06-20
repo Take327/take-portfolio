@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { MouseEventHandler, useState } from 'react'
 import Backdrop from '@material-ui/core/Backdrop';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
@@ -63,7 +63,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                     <div className={styles.itemTexts}>
                         <h2>{profileItem.itemTitle}</h2>
                         <div className={styles.text}>
-                            <p>{profileItem.text.map((value) => { return <> {value} <br /> </> })}</p>
+                            <p>{profileItem.text.map((value,index) => { return <> {value} <br key={index}/> </> })}</p>
                         </div>
                         <Divider />
                         <div className={styles.text}>
@@ -99,8 +99,8 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                         <Divider />
                         <div className={styles.imgs}>
                             {
-                                profileItem.itemImgPaths.imgs.map((imgPath) => {
-                                    return <img src={imgPath} onClick={() => changeActiveImg(imgPath)} />
+                                profileItem.itemImgPaths.imgs.map((imgPath,index) => {
+                                    return <img src={imgPath} onClick={() => changeActiveImg(imgPath)} key={index}/>
                                 })
                             }
                         </div>

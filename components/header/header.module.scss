@@ -1,0 +1,26 @@
+.headerbar{
+    background-color: #FFF;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 6rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+
+    h2{
+        margin-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .menubutton{
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        .menubutton {
+            display: block;
+        }
+    }
+}
