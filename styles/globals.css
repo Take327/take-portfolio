@@ -13,6 +13,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 2.0rem;
+
+}
+
+h2{
+  font-size: 3.0rem;
 }
 
 * {

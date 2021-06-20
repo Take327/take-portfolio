@@ -1,5 +1,5 @@
 .top {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background: url(../../../public/top_background.jpg) center / cover;
 
@@ -11,6 +11,8 @@
             text-align: center;
             color: #000;
             font-size: 12rem;
+            width: 100%;
+
         }
     }
 

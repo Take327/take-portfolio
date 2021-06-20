@@ -29,7 +29,7 @@ export default function Home() {
 
       <Header chengeOpenState={chengeOpenState} />
       <SideNavi openState={openState} chengeOpenState={chengeOpenState} />
-      <main>
+      <main className={styles.main}>
         <Top />
         <About />
         <Portfolio />
