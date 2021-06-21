@@ -68,12 +68,10 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                         <Divider />
 
                         <div className={styles.text}>
-                            <h4>
-                                使用言語など
-                            </h4>
+                            <h4>Tech</h4>
                             <p>{profileItem.tech}</p>
                         </div>
-                        
+
                         <Divider />
 
                         <div className={styles.text}>

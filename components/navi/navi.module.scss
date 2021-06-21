@@ -18,7 +18,7 @@
         margin: 0;
         height: 100%;
         &:hover {
-            background-color: rgba(245, 245, 245, 3);
+            background-color: rgba(245, 245, 245, 1);
             transition: 0.5s ;
             cursor: pointer;/*カーソルを合わせた際に指マークに変更させる*/
         }
