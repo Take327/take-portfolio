@@ -19,9 +19,7 @@ export const profileItems: ProfileItems = [
                 '/img/portfolio/it-typing/it-typing_top.jpg',
                 '/img/portfolio/it-typing/it-typing_top.jpg',
                 '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
-                '/img/portfolio/it-typing/it-typing_top.jpg',
+                '/img/portfolio/it-typing/it-typing_top.jpg'
             ]
         },
         url: 'https://take-portfolio.vercel.app/',
