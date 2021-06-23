@@ -1,3 +1,9 @@
+$btn-width: 250px !default;
+$btn-height: 80px !default;
+$btn-full: $btn-height + $btn-width !default;
+$btn-half: $btn-full/2 !default;
+$bg-color: #eeeeee !default;
+
 .top {
     width: 100%;
     min-height: 100vh;
@@ -10,11 +16,45 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         h1 {
             margin: 0;
             text-align: center;
             color: #000;
             font-size: 12rem;
+        }
+
+        .btn {
+            $btn-color: random-color(100);
+            $btn-color-dark: shade($btn-color, 40%);
+
+            &:before,
+            &:after {
+                content: "";
+                border-top: $btn-height/2 solid $btn-color-dark;
+                border-bottom: $btn-height/2 solid $btn-color-dark;
+            }
+
+            &:before {
+                border-right: $btn-height/2 solid transparent;
+                transform: translateX(-100%);
+            }
+
+            &:after {
+                border-left: $btn-height/2 solid transparent;
+                transform: translateX(100%);
+            }
+
+            &:hover {
+                color: tint($btn-color, 75%);
+
+                &:before {
+                    transform: translateX(-30%);
+                }
+                &:after {
+                    transform: translateX(30%);
+                }
+            }
         }
     }
 

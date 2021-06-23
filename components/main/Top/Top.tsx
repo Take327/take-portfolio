@@ -9,6 +9,7 @@ const Top: React.FC = () => {
             <div className={styles.top}>
                 <div className={styles.titlearea}>
                     <h1>Take’s Portfolio</h1>
+                    <a className={styles.btn} href="#"><span>Zoning In</span></a>
                 </div>
             </div>
         </section>

@@ -1,14 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Contact.module.scss'
-import { TextField, Input } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import { TextField } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
+
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        text_field: {
+            margin: '0.5rem',
+            fontSize: '1.6rem'
+        }
+
+    })
+);
 
 
 const Contact: React.FC = () => {
+
+    const classes = useStyles();
+
     return (
         <section id="contact">
             <div className={styles.contact}>
@@ -20,7 +31,7 @@ const Contact: React.FC = () => {
                         id="Username"
                         label="お名前"
                         variant="outlined"
-                        className={styles.text_field}
+                        className={classes.text_field}
                     />
                     <TextField
                         required
@@ -28,7 +39,7 @@ const Contact: React.FC = () => {
                         id="MailAddress"
                         label="メールアドレス"
                         variant="outlined"
-                        className={styles.text_field}
+                        className={classes.text_field}
 
                     />
                     <TextField
@@ -39,7 +50,7 @@ const Contact: React.FC = () => {
                         id="Contact"
                         label="お問合せ内容"
                         variant="outlined"
-                        className={styles.text_field}
+                        className={classes.text_field}
 
                     />
                     <Button
