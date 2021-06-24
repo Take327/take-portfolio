@@ -23,39 +23,6 @@ $bg-color: #eeeeee !default;
             color: #000;
             font-size: 12rem;
         }
-
-        .btn {
-            $btn-color: random-color(100);
-            $btn-color-dark: shade($btn-color, 40%);
-
-            &:before,
-            &:after {
-                content: "";
-                border-top: $btn-height/2 solid $btn-color-dark;
-                border-bottom: $btn-height/2 solid $btn-color-dark;
-            }
-
-            &:before {
-                border-right: $btn-height/2 solid transparent;
-                transform: translateX(-100%);
-            }
-
-            &:after {
-                border-left: $btn-height/2 solid transparent;
-                transform: translateX(100%);
-            }
-
-            &:hover {
-                color: tint($btn-color, 75%);
-
-                &:before {
-                    transform: translateX(-30%);
-                }
-                &:after {
-                    transform: translateX(30%);
-                }
-            }
-        }
     }
 
     @media screen and (max-width: 900px) {
