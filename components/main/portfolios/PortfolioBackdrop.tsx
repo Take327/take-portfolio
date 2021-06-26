@@ -80,7 +80,7 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                             <div className={styles.link}>
                                 <LinkIcon fontSize="small" />
                                 <a href={profileItem.url} target="_blank">
-                                    {profileItem.url}
+                                    Demo
                                 </a>
                             </div>
 
