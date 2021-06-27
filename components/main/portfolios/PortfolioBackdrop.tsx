@@ -78,14 +78,14 @@ const PortfolioBackdrop: React.FC<Props> = ({ profileItem }) => {
                             <h4>Link</h4>
 
                             <div className={styles.link}>
-                                <LinkIcon fontSize="small" />
+                                <LinkIcon fontSize="large" />
                                 <a href={profileItem.url} target="_blank">
                                     Demo
                                 </a>
                             </div>
 
                             <div className={styles.link}>
-                                <GitHubIcon fontSize="small" />
+                                <GitHubIcon fontSize="large" />
                                 <a href={profileItem.github} target="_blank">
                                     GitHub
                                 </a>
