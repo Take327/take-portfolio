@@ -1,6 +1,7 @@
 
 import React from 'react'
 import styles from './Top.module.scss'
+import ScrollButton from './Button/ScrollButton'
 
 const Top: React.FC = () => {
 
@@ -10,6 +11,7 @@ const Top: React.FC = () => {
                 <div className={styles.titlearea}>
                     <h1>Take’s Portfolio</h1>
                 </div>
+                <ScrollButton />
             </div>
         </section>
     )
