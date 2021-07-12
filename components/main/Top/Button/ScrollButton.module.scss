@@ -32,18 +32,10 @@
     /* Basic Box */
     svg rect {
         stroke-dasharray: 400, 0;
-        -webkit-transition: all 0.8s ease-in-out;
-        -moz-transition: all 0.8s ease-in-out;
-        -ms-transition: all 0.8s ease-in-out;
-        -o-transition: all 0.8s ease-in-out;
     }
     &:hover svg rect {
         stroke-width: 3;
         stroke-dasharray: 35, 245;
         stroke-dashoffset: 38;
-        -webkit-transition: all 0.8s ease-in-out;
-        -moz-transition: all 0.8s ease-in-out;
-        -ms-transition: all 0.8s ease-in-out;
-        -o-transition: all 0.8s ease-in-out;
     }
 }
