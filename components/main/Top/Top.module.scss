@@ -1,8 +1,8 @@
 .top {
     width: 100%;
     min-height: 100vh;
-    background: url(../../../public/top_background.jpg) center / cover;
-    object-fit: cover;
+    background: rgba(0, 0, 0, 0.15);
+
 
     .titlearea {
         margin: 0;
@@ -15,7 +15,7 @@
         h1 {
             margin: 0;
             text-align: center;
-            color: #000;
+            color: #FFF;
             font-size: 12rem;
         }
     }

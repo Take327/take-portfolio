@@ -27,3 +27,8 @@ h2 {
 * {
   box-sizing: border-box;
 }
+
+#top{
+  background: url(../public/top_background.jpg) center / cover;
+  object-fit: cover;
+}
