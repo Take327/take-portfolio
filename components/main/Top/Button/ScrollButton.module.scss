@@ -32,6 +32,7 @@
     /* Basic Box */
     svg rect {
         stroke-dasharray: 400, 0;
+        transition: all .9s cubic-bezier(0.19, 1, 0.22, 1);
     }
     &:hover svg rect {
         stroke-width: 3;
