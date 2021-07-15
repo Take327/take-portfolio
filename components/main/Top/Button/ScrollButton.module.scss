@@ -2,7 +2,7 @@
     width: 130px;
     height: 65px;
     margin: 15px auto;
-    color: #4274d3;
+    color: #FFF;
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     line-height: 65px;
@@ -21,12 +21,12 @@
     svg path,
     svg polyline {
         fill: none;
-        stroke: #4274d3;
-        stroke-width: 1;
+        stroke: #FFF;
+        stroke-width: 3;
     }
 
     &:hover svg rect polyline {
-        stroke: #4274d3;
+        stroke: #FFF;
     }
 
     /* Basic Box */
