@@ -1,11 +1,10 @@
 import { FC } from 'react'
 import styles from './ScrollButton.module.scss'
 import {smoothScrollAction} from '../../../util/smoothScrollAction'
-import {naviData} from '../../../../dataset/naviData'
 
 
 
-const ScrollButton = () => {
+const ScrollButton:FC = () => {
 
     return (
         <div className={styles.basicBox}>
