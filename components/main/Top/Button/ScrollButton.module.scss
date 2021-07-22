@@ -1,5 +1,5 @@
 .basicBox {
-    width: 130px;
+    width: 200px;
     height: 65px;
     margin: 15px auto;
     color: #FFF;
@@ -36,7 +36,7 @@
     }
     &:hover svg rect {
         stroke-width: 3;
-        stroke-dasharray: 35, 245;
-        stroke-dashoffset: 38;
+        stroke-dasharray: 390, 100;
+        stroke-dashoffset: 360;
     }
 }
